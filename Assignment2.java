@@ -1,21 +1,21 @@
 package demo;
 
 public class Assignment2 {
-public static int minNum(int samDaily,int kettyDaily, int difference) {
+public static int minDays(int samDaily,int kettyDaily, int diff) {
         
         
-        int samsolved=difference+samDaily;
-        int kellysolved=kettyDaily;
+        int samSolved=diff+samDaily;
+        int kellySolved=kettyDaily;
         int count=1;
         
         if(samDaily>=kettyDaily){
             return -1;
             }
         
-        while(samsolved-kellysolved>=0){
+        while(samSolved-kellySolved>=0){
             
-        	 samsolved=samsolved+samDaily;
-             kellysolved=kellysolved+kettyDaily;
+        	 samSolved=samSolved+samDaily;
+             kellySolved=kellySolved+kettyDaily;
              count++;
              }
          return count;
@@ -26,7 +26,7 @@ public static int minNum(int samDaily,int kettyDaily, int difference) {
         int difference=4;
         int samDaily=3;
         int kettyDaily=5;
-        System.out.println(minNum(samDaily,kettyDaily,difference));
+        System.out.println(minDays(samDaily,kettyDaily,difference));
     }
 
 
