@@ -8,7 +8,7 @@ public static int minDays(int samDaily,int kellyDaily, int diff) {
         int kellySolved=kellyDaily;
         int count=1;
         
-        if(samDaily>=kettyDaily){
+        if(samDaily>=kellyDaily){
             return -1;
             }
         
