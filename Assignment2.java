@@ -1,11 +1,11 @@
 package demo;
 
 public class Assignment2 {
-public static int minDays(int samDaily,int kettyDaily, int diff) {
+public static int minDays(int samDaily,int kellyDaily, int diff) {
         
         
         int samSolved=diff+samDaily;
-        int kellySolved=kettyDaily;
+        int kellySolved=kellyDaily;
         int count=1;
         
         if(samDaily>=kettyDaily){
@@ -15,7 +15,7 @@ public static int minDays(int samDaily,int kettyDaily, int diff) {
         while(samSolved-kellySolved>=0){
             
         	 samSolved=samSolved+samDaily;
-             kellySolved=kellySolved+kettyDaily;
+             kellySolved=kellySolved+kellyDaily;
              count++;
              }
          return count;
